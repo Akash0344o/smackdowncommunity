@@ -1,0 +1,30 @@
+# macOS system files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# node_modules (if used for future builds)
+node_modules/
+
+# Output/Build directories
+dist/
+build/
+
+# Logs
+*.log
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backup/temporary files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.zip
+
+# Ignore compiled CSS from SASS/SCSS (optional)
+*.map

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smackdown-Tour</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon"> 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDQCSC0TXW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LDQCSC0TXW');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo.jpg" class="logo-image">
+            </div>
+
+            <div class="title">
+                <h1>Smackdown eSports Community</h1>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tournaments.html">Tournament</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-news">
+        <section class="news">
+            <div class="headlines">
+                <h3>Which tour gonna Come next?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis laboriosam? Nam at repudiandae tenetur blanditiis, consequuntur veniam dolorem alias vel! Neque nostrum aliquid, est architecto a, iste ut maxime aliquam libero natus, illo ipsam ex. Nemo in pariatur dolore, odit a tenetur nam porro adipisci, maxime culpa officia, reiciendis deserunt accusamus aliquid. Odio possimus, error perferendis dignissimos consequuntur vero cumque odit explicabo sed nulla nesciunt nobis iusto eligendi libero sunt enim, placeat et magnam blanditiis quos. Fugit, possimus corporis! Deserunt doloremque non voluptatibus iure quidem esse sapiente quis dolorum, saepe quas reiciendis corrupti? Facilis asperiores, eius dolore quod distinctio enim magnam ea, quisquam doloremque ratione accusantium! Magnam officiis quas delectus quos atque molestiae voluptatibus minus voluptates quis. Illum ab, sit consectetur modi repellendus quidem culpa veniam voluptates expedita nam voluptas odio. Odio nesciunt ea voluptate explicabo veritatis eos quibusdam unde nisi. Porro nam impedit atque quibusdam corporis veniam voluptatum ipsum! Molestiae maxime reiciendis sed, perspiciatis odio dolores illo dolore, nam praesentium magnam, tempore minus! Officiis, velit perferendis.</p>
+            </div>
+            <div class="news-preview-container">
+                <div class="news-item">
+                    <img src="images/tour1.jpg" alt="Tournament Image" class="news-image">
+                    <h4>SMACKDOWN eFootball INDIA SHOWDOWN</h4>
+                    <p>Tournament starting soon register now from the link bellow!</p>
+                    <a href="https://forms.gle/xPtCocQTLCRGyyZcA">
+                        <button class="register-button">Register now</button>
+                    </a>
+                </div>
+                <div class="news-item2">
+                    <img src="images/tour1.jpg" alt="Player Image" class="news-image">
+                    <h4>What happend to the Top gamer?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, omnis laboriosam? Nam at repudiandae tenetur blanditiis, consequuntur veniam dolorem alias vel! Neque nostrum aliquid, est architecto a, iste ut maxime aliquam libero natus, illo ipsam ex.</p>
+                </div>
+                <div class="news-item">
+                    <img src="images/partner.png" alt="Partner Image" class="news-image">
+                    <h4>ADVERTISEMENT SPOT AVAILABLE</h4>
+                    <p>Advertisement spot available in this website. For furthur information Contact Below</p>
+                    <br>
+                    <a href="https://www.wa.me/+918584997031" class="click-button">Contact</a>
+                </div>
+        </section>
+    </main>
+ 
+        <footer class="footer">
+            <div class="social-media">
+
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+
+            <p class="footer-text">© 2023 <span class="brand-name">Smackdown Community</span>. All rights reserved.</p>
+            <p class="footer-text">Designed by <span class="designer">Akash</span></p>
+        </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+      <p>This website uses cookies to ensure you get the best experience.</p>
+      <button onclick="acceptCookies()" class="btn-glow">Got it!</button>
+    </div>
+
+    <script>
+      function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookieAccepted', 'true');
+      }
+      window.onload = () => {
+        if (!localStorage.getItem('cookieAccepted')) {
+          document.getElementById('cookie-banner').style.display = 'flex';
+        }
+      };
+    </script>
+</body>
+</html>
+    

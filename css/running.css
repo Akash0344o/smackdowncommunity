@@ -1,0 +1,308 @@
+/* ==== Base Setup ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main, header, footer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* ==== Animations ==== */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px #00ffe7; }
+  50% { text-shadow: 0 0 20px #ff00c8; }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== Header ==== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #00ffe7;
+  filter: drop-shadow(0 0 10px #00ffe7);
+}
+
+.title h1 {
+  color: #00ffe7;
+  font-size: 1.6rem;
+  animation: glow 4s infinite ease-in-out;
+}
+
+.search {
+  display: flex;
+  gap: 5px;
+}
+
+.search input {
+  padding: 8px;
+  background: #1a1a1a;
+  border: 1px solid #00ffe7;
+  border-radius: 8px 0 0 8px;
+  color: #fff;
+}
+
+.search button {
+  padding: 8px 12px;
+  background: #00ffe7;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  color: #000;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #ff00c8;
+  color: #fff;
+}
+
+/* ==== Navbar ==== */
+.navbar {
+  margin-top: 10px;
+  background: #121212;
+  border-top: 1px solid #00ffe7;
+  border-bottom: 1px solid #00ffe7;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.navbar nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  padding: 10px 20px;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  background: #00ffe7;
+  color: #000;
+}
+
+/* ==== Main Tournament Section ==== */
+.c-ournament {
+  animation: fadeUp 1s ease;
+  margin-top: 30px;
+}
+
+.upper {
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(#1f1f1f, #0d0d0d);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 231, 0.2);
+}
+
+.upper h1 {
+  color: #00ffe7;
+  animation: glow 5s infinite;
+}
+
+.upper p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* ==== Standings Tables ==== */
+.standings {
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+}
+
+.standings h2 {
+  color: #00ffe7;
+  text-align: center;
+  animation: glow 4s infinite;
+  margin-bottom: 20px;
+}
+
+.standings h3 {
+  color: #ff00c8;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 255, 231, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeUp 1s ease;
+}
+
+thead th {
+  background: #00ffe7;
+  color: #0d0d0d;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td, tbody th {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  color: #ccc;
+}
+
+tbody tr:hover {
+  background-color: #222;
+}
+
+/* ==== CTA Buttons ==== */
+.machday a, .div a {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 20px;
+  text-align: center;
+  width: max-content;
+  background: #00ffe7;
+  color: #0d0d0d;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+  animation: glow 6s infinite;
+}
+
+.machday a:hover, .div a:hover {
+  background: #ff00c8;
+  color: #fff;
+}
+
+/* ==== Footer ==== */
+.footer {
+  margin-top: 50px;
+  background: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #00ffe7;
+}
+
+.footer-links a {
+  color: #00ffe7;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff00c8;
+}
+
+.footer-text {
+  color: #888;
+  margin-top: 5px;
+}
+
+.brand-name {
+  color: #00ffe7;
+}
+
+.designer {
+  color: #ff00c8;
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search input, .search button {
+    width: 100%;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  tbody tr {
+    margin-bottom: 20px;
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #00ffe7;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .machday a, .div a {
+    width: 90%;
+  }
+}
+
+.brand-name { color: #00ffe7; }
+.designer { color: #ff00c8; }
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 15px 20px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #00ffe7;
+  box-shadow: 0 -2px 10px rgba(0, 255, 231, 0.1);
+  z-index: 999;
+}
+.cookie-banner p { margin: 0; }
